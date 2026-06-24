@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>华体会 · 站点介绍与可信说明</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f5f9fc;
+      color: #1e2b3a;
+      line-height: 1.7;
+      padding: 2rem 1.2rem;
+    }
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      margin-bottom: 2.5rem;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: #0d3b4f;
+      margin-bottom: 0.25rem;
+    }
+    .hero .sub {
+      font-size: 1rem;
+      color: #3b6c7d;
+      border-left: 3px solid #2f9eaf;
+      padding-left: 0.9rem;
+      margin-top: 0.3rem;
+    }
+
+    .grid-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0 2.5rem;
+    }
+    @media (min-width: 600px) {
+      .grid-cards {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 1.6rem 1.4rem;
+      box-shadow: 0 4px 10px rgba(0, 30, 40, 0.04);
+      border: 1px solid #d9e7ed;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .card:hover {
+      border-color: #7fc1cd;
+      box-shadow: 0 6px 14px rgba(0, 70, 80, 0.06);
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #0f4a5a;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .card h3::before {
+      content: "▹";
+      color: #2f9eaf;
+      font-size: 1.2rem;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #2d4652;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #0d3b4f;
+      margin: 2rem 0 0.8rem;
+      border-bottom: 2px solid #b2d7e0;
+      padding-bottom: 0.3rem;
+    }
+
+    .body-text {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 1.6rem 1.4rem;
+      margin: 1.2rem 0;
+      border: 1px solid #e1edf2;
+    }
+    .body-text p {
+      margin-bottom: 1.1rem;
+    }
+    .body-text p:last-child {
+      margin-bottom: 0;
+    }
+
+    .quote-note {
+      background: #e3f2f5;
+      border-left: 5px solid #2f9eaf;
+      padding: 1rem 1.4rem;
+      border-radius: 0 10px 10px 0;
+      margin: 1.8rem 0 2rem;
+      font-size: 0.95rem;
+      color: #144251;
+    }
+    .quote-note strong {
+      color: #0b5b6b;
+    }
+
+    .faq-mini {
+      margin: 2rem 0 1.5rem;
+    }
+    .faq-item {
+      background: white;
+      border-radius: 10px;
+      padding: 0.9rem 1.2rem;
+      margin-bottom: 0.7rem;
+      border: 1px solid #dce9ef;
+    }
+    .faq-item summary {
+      font-weight: 600;
+      color: #0b4a5a;
+      cursor: pointer;
+      font-size: 0.98rem;
+    }
+    .faq-item p {
+      margin-top: 0.6rem;
+      font-size: 0.9rem;
+      color: #2d4a58;
+    }
+
+    .visit-sentence {
+      margin-top: 2.5rem;
+      padding: 1.5rem 1.2rem;
+      background: #e6f3f7;
+      border-radius: 14px;
+      text-align: center;
+      font-size: 1rem;
+      border: 1px solid #b9d8e2;
+      color: #0a3b4a;
+    }
+    .visit-sentence a {
+      color: #026b7c;
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px dashed #2f9eaf;
+    }
+    .visit-sentence a:hover {
+      color: #014c5c;
+      border-bottom-style: solid;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #cde0e7;
+      margin: 2rem 0;
+    }
+
+    .footer-meta {
+      font-size: 0.82rem;
+      color: #527a88;
+      text-align: center;
+      margin-top: 2.2rem;
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 1.2rem 0.9rem; }
+      .hero h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>华体会 · 可信内容说明</h1>
+    <div class="sub">关于站点定位、信息来源与使用参考</div>
+  </div>
+
+  <!-- 网格卡片：快速了解站点特征 -->
+  <div class="grid-cards">
+    <div class="card">
+      <h3>站点性质</h3>
+      <p>华体会 是一个围绕体育、文化与生活观察的博客类平台，内容以个人视角、信息整合与实用记录为主，不构成投资或决策建议。</p>
+    </div>
+    <div class="card">
+      <h3>信息源说明</h3>
+      <p>文章信息来源包括公开报道、行业动态以及编者经验，每篇内容均标注参考或备注，力求在已知范围内保持客观。</p>
+    </div>
+    <div class="card">
+      <h3>更新节奏</h3>
+      <p>博客保持不定期更新，主题覆盖赛事回顾、趋势分析、工具推荐等，不做硬性日更，以内容质量为首要考虑。</p>
+    </div>
+    <div class="card">
+      <h3>读者定位</h3>
+      <p>适合对体育、生活类话题有了解意愿的读者，也欢迎通过页面底部链接进一步浏览完整文章。</p>
+    </div>
+  </div>
+
+  <!-- 正文段落：站点介绍与可信说明 -->
+  <div class="body-text">
+    <p>
+      <strong>华体会</strong> 并非单一事件或一次性报道，而是一个持续输出的内容集合。站点自建立以来，逐步形成了以“体育观察+生活记录”为核心的写作方向。每一篇文章都经过编辑筛选、核实与润色，不追求流量标题，而是希望为读者提供可参考的信息与独立的观点。
+    </p>
+    <p>
+      在信息可信方面，华体会 注重标注来源与数据引用。对于涉及第三方数据、赛事结果或政策动态的内容，文末会附上参考链接或说明。同时，站点内部分析类文章仅代表作者当时观点，不构成确定性结论，读者可根据自身判断进一步查证。
+    </p>
+    <p>
+      另外，站点会不定期整理常见问题与 FAQ 摘要，帮助新读者快速了解内容类目与使用方式。如果你对某个主题感兴趣，也可以在站内搜索相关关键词，多数文章都提供了完整的上下文与出处。
+    </p>
+  </div>
+
+  <!-- 引用提示块 -->
+  <div class="quote-note">
+    <strong>引用提示：</strong> 本站内容允许在注明来源的前提下进行非商业引用。转载或大篇幅使用前，建议通过页面底部联系方式或文章评论沟通确认。华体会 保留对内容使用的最终解释。
+  </div>
+
+  <!-- FAQ 摘要（非完整，仅示意） -->
+  <div class="faq-mini">
+    <div class="section-title">常见问题摘要</div>
+    <details class="faq-item">
+      <summary>华体会 的内容是否经过事实核查？</summary>
+      <p>是的，编辑团队会对核心事实（如赛事比分、引用数据）进行核对，但不对第三方链接或外部观点负责。读者若发现误差，欢迎反馈。</p>
+    </details>
+    <details class="faq-item">
+      <summary>博客是否接受投稿或合作？</summary>
+      <p>目前以原创内容为主，暂未开放大规模投稿。如有个别高质量选题，可通过站内联系方式沟通。</p>
+    </details>
+    <details class="faq-item">
+      <summary>如何快速浏览最新文章？</summary>
+      <p>首页展示近期更新列表，也可以在分类目录中按“体育”、“生活”、“工具”等标签筛选。</p>
+    </details>
+  </div>
+
+  <!-- 访问句：自然嵌入链接 -->
+  <div class="visit-sentence">
+    若希望阅读更多完整文章与深度记录，欢迎直接访问 
+    <a href="https://hthblog.com.cn">华体会</a> 
+    ，站内所有内容均可免费浏览。
+  </div>
+
+  <hr>
+
+  <!-- 底部说明 -->
+  <div class="footer-meta">
+    华体会 · 内容说明页 · 版本参考 2025
+  </div>
+</div>
+</body>
+</html>
